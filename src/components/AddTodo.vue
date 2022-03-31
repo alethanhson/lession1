@@ -9,7 +9,6 @@
 
 <script>
 import { ref } from 'vue'
-import { v4 as uuidv4 } from 'uuid'
 
 export default {
   name: 'add-todo-component',
@@ -19,7 +18,6 @@ export default {
       event.preventDefault()
 
       const newItem = {
-        id: uuidv4(),
         title: title.value,
         completed: false
       }
